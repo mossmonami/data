@@ -11,7 +11,7 @@ with mp_holistic.Holistic(min_detection_confidence=0.5, min_tracking_confidence=
 
     
 
-    while cap.isOpened(): #캠 작동하는 동안
+    while cap.isOpened(): #캠 작동
         ret, frame = cap.read() #캠에서 받아오는 값
 
         image = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
